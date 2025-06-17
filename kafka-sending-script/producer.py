@@ -8,7 +8,7 @@ from kafka import KafkaProducer
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 RTSP_URL = "rtsp://13.50.65.62:8554/demo"
-KAFKA_BROKER = "localhost:9092"
+KAFKA_BROKER = "13.50.65.62:9092"
 TOPIC = "demo-video-stream"
 
 # Set up Kafka producer
