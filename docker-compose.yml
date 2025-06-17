@@ -21,8 +21,6 @@ services:
   detector:
     build:
       context: ./object-detector
-    depends_on:
-      - flask-server
 
   # flask-server:
   #   build:
