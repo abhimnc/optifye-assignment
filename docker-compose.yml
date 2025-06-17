@@ -23,7 +23,6 @@ services:
       context: ./object-detector
     depends_on:
       - flask-server
-      - video-stream
 
   flask-server:
     build:
