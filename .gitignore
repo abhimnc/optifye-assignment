@@ -1,0 +1,3 @@
+flask-post-processing/.env
+terraform/aws_credentials.sh
+terraform/.terraform/
