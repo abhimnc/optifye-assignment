@@ -24,13 +24,13 @@ services:
     depends_on:
       - flask-server
 
-  flask-server:
-    build:
-      context: ./flask-post-processing
-    ports:
-      - "5555:5555"
-    env_file:
-      - .env
+  # flask-server:
+  #   build:
+  #     context: ./flask-post-processing
+  #   ports:
+  #     - "5555:5555"
+  #   env_file:
+  #     - .env
 
   # video-stream:
   #   build:

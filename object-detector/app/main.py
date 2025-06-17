@@ -20,7 +20,7 @@ def process_image(image_bytes):
     }
 
     # Send to Flask server for drawing and S3 upload
-    response = requests.post("http://13.50.65.62:5555/draw", json=data)
+    response = requests.post("http://flask-server:5555/draw", json=data)
     print("Uploaded to S3:", response.json()["s3_url"])
 
 def consume_kafka():
