@@ -33,9 +33,9 @@ services:
     env_file:
       - .env
 
-  video-stream:
-    build:
-      context: ./video-ingestion
+  # video-stream:
+  #   build:
+  #     context: ./video-ingestion
 
   sending-frames:
     build:

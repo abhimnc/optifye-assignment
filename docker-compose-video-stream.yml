@@ -1,0 +1,3 @@
+  video-stream:
+    build:
+      context: ./video-ingestion
