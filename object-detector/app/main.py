@@ -25,7 +25,7 @@ def process_image(image_bytes):
 
 def consume_kafka():
     consumer = KafkaConsumer(
-        "images",
+        "demo-video-stream",
         bootstrap_servers="kafka:9092",
         auto_offset_reset="earliest",
         enable_auto_commit=True,
