@@ -3,10 +3,9 @@ services:
   detector:
     build:
       context: ./object-detector
-    ports:
-      - "8888:8888"
     depends_on:
       - flask-server
+      - video-stream
 
   flask-server:
     build:
@@ -17,14 +16,15 @@ services:
   video-stream:
     build:
       context: ./video-ingestion
-    ports:
-      - "5555:5555"
+    depends_on:
+      - kafka
 
   sending-frames:
     build:
       context: ./kafka-sending-script
     depends_on:
       - video-stream
+      - kafka
 
   kafka:
     image: bitnami/kafka:3.7
