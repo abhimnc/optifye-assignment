@@ -4,3 +4,4 @@ services:
   video-stream:
     build:
       context: ./video-ingestion
+    container_name: video-stream
