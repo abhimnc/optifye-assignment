@@ -39,8 +39,6 @@ services:
   sending-frames:
     build:
       context: ./kafka-sending-script
-    depends_on:
-      - video-stream
     restart: always
 
 
