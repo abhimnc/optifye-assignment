@@ -36,15 +36,12 @@ services:
   video-stream:
     build:
       context: ./video-ingestion
-    depends_on:
-      - kafka
 
   sending-frames:
     build:
       context: ./kafka-sending-script
     depends_on:
       - video-stream
-      - kafka
     restart: always
 
 
