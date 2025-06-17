@@ -45,6 +45,7 @@ services:
     depends_on:
       - video-stream
       - kafka
+    restart: always
 
 
 

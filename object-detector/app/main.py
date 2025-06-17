@@ -4,8 +4,8 @@ import requests
 import io
 from kafka import KafkaConsumer
 from PIL import Image
-from app.model import model
-from app.utils import preprocess
+from model import model
+from utils import preprocess
 
 def process_image(image_bytes):
     image_tensor = preprocess(image_bytes)
